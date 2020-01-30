@@ -38,15 +38,19 @@ public void draw()
 	if(size2<=900){
 		size2+=2;
 	}else{
+		asd=2;
+		sierpinski(800,200,size2-300);
+		sierpinski(650,500,size2-300);
+		sierpinski(950,500,size2-300);
 		rotate(PI);
 		translate(-800,-350);
 
 		sierpinski(0,0,size3);
-		sierpinski(-150,-200,size3);
-		sierpinski(-150,-200,size3);
+		sierpinski(-150,-300,size3);
+		sierpinski(150,-300,size3);
 	}
-	if(size<=300){
-		size+=3;
+	if(size3<=300&&asd==2){
+		size3+=3;
 	}
 	/*
 	for(int i=0; i<20; i+=5){
@@ -65,7 +69,7 @@ public void draw()
 	}
 	*/
 }
-public void mouseClicked()//optional
+public void mousePressed()//optional
 {
 	noFill();
 	sierpinski(mouseX,mouseY-50,300);
