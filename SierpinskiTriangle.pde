@@ -18,6 +18,7 @@ public void setup()
 }
 public void draw()
 {	
+	size(1200,1000);
 	background(0);
 	if(asd ==0){
 		sierpinski(600,450,size);
