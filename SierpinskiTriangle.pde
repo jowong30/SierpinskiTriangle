@@ -1,6 +1,6 @@
 int bob = 1;
 int aaa = 1;
-int size = 300;
+int sizeB = 300;
 int asd = 0;
 int size2=300;
 int size3 =0;
@@ -18,16 +18,16 @@ public void setup()
 }
 public void draw()
 {	
-	
+
 	background(0);
 	if(asd ==0){
-		sierpinski(600,450,size);
-		if(size>=600){
-			size=300;
+		sierpinski(600,450,sizeB);
+		if(sizeB>=600){
+			sizeB=300;
 			asd = 1;
 
 		}else{
-			size+=2;
+			sizeB+=2;
 		}
 	}
 	if(asd ==1){
